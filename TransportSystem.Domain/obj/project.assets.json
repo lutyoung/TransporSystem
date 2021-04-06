@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TransportSystem.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TransportSystem.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TransportSystem.Core.dll": {}
+        }
+      },
+      "TransportSystem.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "TransportSystem.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TransportSystem.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TransportSystem.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TransportSystem.Core/1.0.0": {
+      "type": "project",
+      "path": "../TransportSystem.Core/TransportSystem.Core.csproj",
+      "msbuildProject": "../TransportSystem.Core/TransportSystem.Core.csproj"
+    },
+    "TransportSystem.Data/1.0.0": {
+      "type": "project",
+      "path": "../TransportSystem.Data/TransportSystem.Data.csproj",
+      "msbuildProject": "../TransportSystem.Data/TransportSystem.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "TransportSystem.Core >= 1.0.0",
+      "TransportSystem.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Domain\\TransportSystem.Domain.csproj",
+      "projectName": "TransportSystem.Domain",
+      "projectPath": "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Domain\\TransportSystem.Domain.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Core\\TransportSystem.Core.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Core\\TransportSystem.Core.csproj"
+            },
+            "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Data\\TransportSystem.Data.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\TransportSystem\\TransportSystem.Data\\TransportSystem.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
